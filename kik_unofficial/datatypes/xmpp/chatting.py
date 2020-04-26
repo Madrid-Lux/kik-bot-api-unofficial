@@ -27,7 +27,7 @@ class OutgoingChatMessage(XMPPElement):
         self.bot_mention_jid = bot_mention_jid
 
     def serialize(self):
-        timestamp = str(int(round(time.time() * 1000)))
+        timestamp = "1619470463000"
         message_type = "chat" if not self.is_group else "groupchat"
         bot_mention_data = ('<mention>'
                             '<bot>{}</bot>'
